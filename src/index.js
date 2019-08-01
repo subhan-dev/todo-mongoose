@@ -18,7 +18,7 @@ mongoose.connect('mongodb+srv://ahmadsubhan24:purwadhika21!@@clusterchan-apnmr.m
 })
 
 const app = express()
-const port = 2019
+const port = process.env.PORT || 2019
 
 app.use(cors())
 app.use(express.json())
